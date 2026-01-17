@@ -18,7 +18,7 @@ function MyProducts() {
       const token = localStorage.getItem("token");
 
       const res = await fetch(
-        "http://localhost:5000/api/products/my/products",
+        "https://unimart-backend-r87y.onrender.com/api/products/my/products",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -44,7 +44,7 @@ function MyProducts() {
       const token = localStorage.getItem("token");
 
       const res = await fetch(
-        `http://localhost:5000/api/products/${id}`,
+        `https://unimart-backend-r87y.onrender.com/api/products/${id}`,
         {
           method: "DELETE",
           headers: {
@@ -78,7 +78,7 @@ function MyProducts() {
             {products.map((p) => (
               <div className="product-card" key={p._id}>
                 <img
-                  src={`http://localhost:5000/${p.image}`}
+                  src={`https://unimart-backend-r87y.onrender.com/${p.image}`}
                   alt={p.title}
                 />
 
@@ -113,3 +113,4 @@ function MyProducts() {
 }
 
 export default MyProducts;
+
