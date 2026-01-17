@@ -27,7 +27,7 @@ function EditProduct() {
 
   const fetchProduct = async () => {
     try {
-      const res = await fetch(`http://localhost:5000/api/products/${id}`);
+      const res = await fetch(`https://unimart-backend-r87y.onrender.com/api/products/${id}`);
       const data = await res.json();
 
       if (!res.ok) {
@@ -86,7 +86,7 @@ function EditProduct() {
 
     try {
       const res = await fetch(
-        `http://localhost:5000/api/products/${id}`,
+        `https://unimart-backend-r87y.onrender.com/api/products/${id}`,
         {
           method: "PUT",
           headers: {
@@ -119,7 +119,7 @@ function EditProduct() {
           {/* 🖼️ CURRENT IMAGE */}
           {currentImage && (
             <img
-              src={`http://localhost:5000/${currentImage}`}
+              src={`https://unimart-backend-r87y.onrender.com/${currentImage}`}
               alt="Current"
               style={{
                 width: "100%",
@@ -184,3 +184,4 @@ function EditProduct() {
 }
 
 export default EditProduct;
+
