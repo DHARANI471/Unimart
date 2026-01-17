@@ -1,4 +1,4 @@
-const Product = require("../models/product");
+const Product = require("../models/Product");
 const User = require("../models/User");
 
 // ================================
@@ -46,3 +46,4 @@ const updateProfile = async (req, res) => {
 };
 
 module.exports = { getProfile, updateProfile };
+
