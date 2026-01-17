@@ -10,7 +10,7 @@ function Profile() {
   useEffect(() => {
     const token = localStorage.getItem("token");
 
-    fetch("http://localhost:5000/api/user/profile", {
+    fetch("https://unimart-backend-r87y.onrender.com/api/user/profile", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -26,7 +26,7 @@ function Profile() {
   const handleSave = async () => {
     const token = localStorage.getItem("token");
 
-    const res = await fetch("http://localhost:5000/api/user/profile", {
+    const res = await fetch("https://unimart-backend-r87y.onrender.com/api/user/profile", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -107,3 +107,4 @@ function Profile() {
 }
 
 export default Profile;
+
