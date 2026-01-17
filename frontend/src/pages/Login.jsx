@@ -30,7 +30,7 @@ function Login({ setIsAuthenticated }) {
     setLoading(true);
 
     try {
-      const res = await fetch("http://localhost:5000/api/auth/login", {
+      const res = await fetch("https://unimart-backend-r87y.onrender.com/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -88,3 +88,4 @@ function Login({ setIsAuthenticated }) {
 }
 
 export default Login;
+
