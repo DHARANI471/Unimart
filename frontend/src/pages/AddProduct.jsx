@@ -52,7 +52,7 @@ function AddProduct() {
     productData.append("image", formData.image);
 
     try {
-      const res = await fetch("http://localhost:5000/api/products", {
+      const res = await fetch("https://unimart-backend-r87y.onrender.com/api/products", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -152,3 +152,4 @@ function AddProduct() {
 }
 
 export default AddProduct;
+
