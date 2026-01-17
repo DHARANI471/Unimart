@@ -8,7 +8,7 @@ function ProductDetails() {
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/products/${id}`)
+    fetch(`https://unimart-backend-r87y.onrender.com/api/products/${id}`)
       .then((res) => res.json())
       .then((data) => setProduct(data))
       .catch((err) => console.error(err));
@@ -25,7 +25,7 @@ function ProductDetails() {
       <section className="product-details">
         <div className="product-details-card">
           <img
-            src={`http://localhost:5000/${product.image}`}
+            src={`https://unimart-backend-r87y.onrender.com/${product.image}`}
             alt={product.title}
             className="details-image"
           />
@@ -63,5 +63,6 @@ function ProductDetails() {
     </>
   );
 }
+
 
 export default ProductDetails;
