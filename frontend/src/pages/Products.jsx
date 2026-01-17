@@ -19,7 +19,7 @@ function Products() {
   useEffect(() => {
     const token = localStorage.getItem("token");
 
-    fetch("http://localhost:5000/api/products/public", {
+    fetch("https://unimart-backend-r87y.onrender.com/api/products/public", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -109,7 +109,7 @@ function Products() {
               return (
                 <div className="product-card" key={product._id}>
                   <img
-                    src={`http://localhost:5000/${product.image}`}
+                    src={`https://unimart-backend-r87y.onrender.com/${product.image}`}
                     alt={product.title}
                   />
 
@@ -149,3 +149,4 @@ function Products() {
 }
 
 export default Products;
+
