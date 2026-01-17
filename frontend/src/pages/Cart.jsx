@@ -40,7 +40,7 @@ function Cart() {
               {cart.map((item) => (
                 <div className="cart-item" key={item._id}>
                   <img
-                    src={`http://localhost:5000/${item.image}`}
+                    src={`https://unimart-backend-r87y.onrender.com/${item.image}`}
                     alt={item.title}
                   />
 
@@ -77,5 +77,6 @@ function Cart() {
     </>
   );
 }
+
 
 export default Cart;
